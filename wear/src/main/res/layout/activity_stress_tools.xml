@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.wearable.view.BoxInsetLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="25dp"
+    tools:context=".StressToolsActivity">
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ptsd.StressToolsActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:theme="@style/Theme.AppCompat.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Breathing Exercise"
+            android:id="@+id/breathing_tool_button"
+            android:layout_gravity="left|bottom"
+            android:onClick="startBreathingTool"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:theme="@style/Theme.AppCompat.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/muscle_relaxation_button"
+            android:id="@+id/muscle_relaxation_button"
+            android:layout_gravity="right|bottom"
+            android:onClick="startMuscleTool"/>
+    </TableLayout>
+
+
+</android.support.v4.widget.NestedScrollView>
+</android.support.wearable.view.BoxInsetLayout>
